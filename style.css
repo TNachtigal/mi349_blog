@@ -9,6 +9,7 @@ body {
     color: #242424;
     border-top: 10px solid #242424;
     background: white;
+    min-height: 50em;
 }
 
 h1 {
@@ -22,10 +23,13 @@ p {
 
 #blog {
     border-top: 1px dotted #ccc;
+    display: flex
 }
 
 .blog-post {
     border-bottom: 1px dotted #ccc;
+    padding: 20px;
+    margin: 20px;
 }
 
 a[href$=".html"] {
@@ -39,20 +43,32 @@ a[href$=".html"] {
 
 .author {
     font-weight: 700;
-    color: 337c7c;
+    color: #242424;
 }
 
 table {
     table-layout: fixed;
-    width: 75%;
+    width: 150%;
     border-collapse: collapse;
     border: 3px solid;
 }
 
 tbody tr:nth-child(odd) {
     background-color: lightpink;
-  }
+}
   
-  tbody tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background-color: lightgray;
-  }
+}
+
+.picture {
+    float: right;
+    margin-left: 20px;
+}
+
+.sticky {
+    font-size: 1.6em;
+    background: lightgray;
+    position: sticky;
+    bottom: 0;
+}
